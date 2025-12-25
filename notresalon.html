@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notre Salon | Excellence & Savoir-faire</title>
+
+    <!-- Police Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+        <!-- Favicons -->
+    <link rel="icon" type="image/png" href="Assests/Img/logo.png">
+</head>
+<body>
+
+    <!-- NAVBAR (identique à index.html) -->
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">Salon<span>.</span></div>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="notresalon.html"class="active">Notre salon</a></li>
+                <li><a href="nosprestations.html">Prestations</a></li>
+                <li><a href="reservation.html" class="btn-nav">Réserver</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">⋮</div>
+    </div>
+</header>
+
+
+    <!-- HERO PAGE -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Notre salon</h1>
+            <p>
+                Un lieu pensé comme un écrin, où chaque détail est au service
+                de votre style et de votre confort.
+            </p>
+        </div>
+    </section>
+
+    <!-- PRESENTATION -->
+    <section class="salon-presentation">
+        <div class="container">
+            <div class="salon-text">
+                <h2>Une vision de la coiffure</h2>
+                <p>
+                    Notre salon est né d’une volonté simple : proposer une coiffure
+                    exigeante, élégante et intemporelle, loin des standards impersonnels.
+                </p>
+                <p>
+                    Ici, chaque client bénéficie d’une attention particulière.
+                    Nous prenons le temps de comprendre votre style, votre personnalité
+                    et vos attentes afin de créer une coiffure qui vous ressemble.
+                </p>
+                <p>
+                    Plus qu’un rendez-vous, nous offrons une véritable expérience,
+                    dans un cadre apaisant et raffiné.
+                </p>
+                <p>
+    Fondé en <strong>2018</strong>, le salon est né d’une passion pour la coiffure
+    et d’un désir de créer un lieu différent, où le savoir-faire artisanal
+    rencontre une approche moderne et élégante.
+</p>
+
+<p>
+    Au fil des années, le salon s’est construit une identité forte,
+    guidée par la qualité, l’écoute et la recherche constante de l’excellence.
+</p>
+
+            </div>
+
+            <div class="salon-image">
+                <!-- Image du salon / ambiance -->
+                <img src="/Assests/Img/salon.webp" alt="Intérieur du salon">
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHIE -->
+    <section class="salon-philosophy">
+        <div class="container">
+            <h2>Notre philosophie</h2>
+
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <h3>Excellence</h3>
+                    <p>
+                        Chaque prestation repose sur une maîtrise technique
+                        rigoureuse et une formation continue.
+                    </p>
+                </div>
+
+                <div class="philosophy-item">
+                    <h3>Personnalisation</h3>
+                    <p>
+                        Aucune coupe n’est standardisée.
+                        Chaque création est pensée pour s’adapter à votre visage
+                        et à votre mode de vie.
+                    </p>
+                </div>
+
+                <div class="philosophy-item">
+                    <h3>Produits premium</h3>
+                    <p>
+                        Nous travaillons exclusivement avec des produits
+                        sélectionnés pour leur performance et leur respect du cheveu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="gallery-grid">
+    <div class="gallery-item">
+        <img src="/Assests/Img/salon_1.webp" alt="Salon photo 1">
+    </div>
+    <div class="gallery-item">
+        <img src="/Assests/Img/salon_2.webp" alt="Salon photo 2">
+    </div>
+    <div class="gallery-item">
+        <img src="/Assests/Img/salon_3.webp" alt="Salon photo 3">
+    </div>
+    <div class="gallery-item">
+        <img src="/Assests/Img/salon_4.webp" alt="Salon photo 4">
+    </div>
+</div>
+
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Envie de découvrir notre univers ?</h2>
+            <a href="reservation.html" class="btn-primary">Prendre rendez-vous</a>
+        </div>
+    </section>
+
+    <!-- FOOTER (identique à index.html) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Salon.</h3>
+                <p>Coiffure haut de gamme & élégance intemporelle.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="legal.html">Mentions légales</a>
+                <a href="notresalon.html">Notre salon</a>
+                <a href="nosprestations.html">Prestations</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Salon – Tous droits réservés</p>
+        </div>
+    </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("navLinks");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+});
+</script>
+
+</body>
+
+
+</html>

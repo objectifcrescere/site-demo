@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentions légales</title>
+
+    <!-- Police Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+        <!-- Favicons -->
+    <link rel="icon" type="image/png" href="Assests/Img/logo.png">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">Salon<span>.</span></div>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="notresalon.html">Notre salon</a></li>
+                <li><a href="nosprestations.html">Prestations</a></li>
+                <li><a href="reservation.html" class="btn-nav">Réserver</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">⋮</div>
+    </div>
+</header>
+
+
+    <!-- HERO PAGE -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Mentions légales</h1>
+            <p>
+                Informations légales relatives au site et à son éditeur,
+                conformément à la législation en vigueur.
+            </p>
+        </div>
+    </section>
+
+    <!-- LEGAL CONTENT -->
+<div class="legal-block">
+    <h2>Éditeur du site</h2>
+    <p>
+        Nom du salon : <strong>Salon</strong><br>
+        Forme juridique : À compléter (SARL / SAS / EI / Auto-entrepreneur)<br>
+        Adresse : Adresse complète du salon<br>
+        Téléphone : Numéro de téléphone<br>
+        Email : Adresse email de contact
+    </p>
+</div>
+<div class="legal-block">
+    <h2>Directeur de la publication</h2>
+    <p>
+        Le directeur de la publication est : <strong>le responsable du salon</strong>.
+    </p>
+</div>
+<div class="legal-block">
+    <h2>Hébergement</h2>
+    <p>
+        Le site est hébergé par :<br>
+        <strong>GitHub Pages</strong> – GitHub, Inc.<br>
+        88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis<br>
+        Site web : https://pages.github.com
+    </p>
+</div>
+<div class="legal-block">
+    <h2>Conception et réalisation</h2>
+    <p>
+        Site conçu et développé par <strong>ObjectifCrescere</strong>.
+    </p>
+</div>
+<div class="legal-block">
+    <h2>Propriété intellectuelle</h2>
+    <p>
+        Les textes, la structure, le design et l’identité visuelle du site
+        sont la propriété exclusive du salon, sauf mentions contraires.
+    </p>
+    <p>
+        Certaines images présentes sur le site proviennent de banques
+        d’images libres de droits, notamment <strong>Pexels</strong>,
+        et sont utilisées conformément à leurs licences respectives.
+    </p>
+    <p>
+        Toute reproduction, représentation ou utilisation des contenus
+        protégés du site, sans autorisation préalable,
+        est strictement interdite.
+    </p>
+</div>
+
+<div class="legal-block">
+    <h2>Données personnelles</h2>
+    <p>
+        Le présent site ne collecte aucune donnée personnelle
+        via des formulaires ou des outils de suivi.
+    </p>
+    <p>
+        Les prises de rendez-vous s’effectuent soit par contact direct
+        (téléphone ou email), soit via la plateforme tierce <strong>Planity</strong>,
+        laquelle dispose de sa propre politique de confidentialité.
+    </p>
+    <p>
+        Aucune donnée personnelle n’est stockée ou traitée directement
+        par le présent site.
+    </p>
+</div>
+
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Salon.</h3>
+                <p>Coiffure haut de gamme & élégance intemporelle.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="legal.html">Mentions légales</a>
+                <a href="notresalon.html">Notre salon</a>
+                <a href="nosprestations.html">Prestations</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Salon – Tous droits réservés</p>
+        </div>
+    </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("navLinks");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+});
+</script>
+
+</body>
+</html>

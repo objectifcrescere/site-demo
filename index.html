@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon de Coiffure | Excellence & Élégance</title>
+
+    <!-- Police Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="Assests/Img/logo.png">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">Salon<span>.</span></div>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="notresalon.html">Notre salon</a></li>
+                <li><a href="nosprestations.html">Prestations</a></li>
+                <li><a href="reservation.html" class="btn-nav">Réserver</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">⋮</div>
+    </div>
+</header>
+
+
+   <!-- HERO -->
+<section class="hero hero-image">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+        <h1>L’art de la coiffure<br><span>haut de gamme</span></h1>
+        <p>
+            Un salon d’exception dédié à l’élégance, au détail et à l’excellence.
+            Chaque coupe est pensée pour sublimer votre style.
+        </p>
+        <a href="reservation.html" class="btn-primary">Réserver un rendez-vous</a>
+    </div>
+</section>
+
+
+    <!-- MISSIONS -->
+    <section class="missions">
+        <div class="container">
+            <div class="missions-text">
+                <h2>Notre mission</h2>
+                <p>
+                    Offrir une expérience unique, où le savoir-faire artisanal rencontre
+                    les standards les plus élevés de la coiffure moderne.
+                </p>
+                <p>
+                    Nous accordons une attention particulière à chaque détail :
+                    diagnostic personnalisé, produits premium et maîtrise technique.
+                </p>
+            </div>
+
+            <div class="missions-images">
+                <!-- Images à remplacer -->
+                <div class="image-card">
+                    <img src="./Assests/Img/salon.webp" alt="Salon de coiffure" />
+                </div>
+                <div class="image-card">
+                    <img src="./Assests/Img/coupedecheveux.webp" alt="Coupe de cheveux" />
+                </div>
+                <div class="image-card">
+                    <img src="./Assests/Img/detailcoiffure.webp" alt="Détail coiffure" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVIS CLIENTS -->
+<section class="reviews">
+    <div class="container">
+        <div class="reviews-header">
+            <h2>Ils nous font confiance</h2>
+            <p>Une expérience reconnue par notre clientèle.</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <p class="review-text">
+                    “Un accueil irréprochable et un vrai sens du détail.
+                    La coupe est parfaite, exactement ce que je voulais.”
+                </p>
+                <span class="review-author">— Camille R.</span>
+            </div>
+
+            <div class="review-card">
+                <p class="review-text">
+                    “Salon élégant, équipe professionnelle et conseils sur mesure.
+                    Je recommande sans hésiter.”
+                </p>
+                <span class="review-author">— Julien M.</span>
+            </div>
+
+            <div class="review-card">
+                <p class="review-text">
+                    “Une vraie expérience haut de gamme.
+                    On se sent écouté et valorisé.”
+                </p>
+                <span class="review-author">— Sophie L.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- LOCALISATION -->
+<section class="location">
+    <div class="container location-grid">
+        <div class="location-text">
+            <h2>Où nous trouver</h2>
+            <p>
+                Situé au cœur de la ville, notre salon vous accueille
+                dans un cadre élégant et facilement accessible.
+            </p>
+            <p class="location-address">
+                12 rue de l’Élégance<br>
+                75000 Paris
+            </p>
+        </div>
+
+        <div class="location-map">
+            <iframe
+                src="https://www.google.com/maps?q=Paris&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA FINAL -->
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à vivre l’expérience ?</h2>
+            <a href="reservation.html" class="btn-primary">Réserver maintenant</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Salon.</h3>
+                <p>Coiffure haut de gamme & élégance intemporelle.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="legal.html">Mentions légales</a>
+                <a href="notresalon.html">Notre salon</a>
+                <a href="nosprestations.html">Prestations</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Salon – Tous droits réservés</p>
+        </div>
+    </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("navLinks");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+});
+</script>
+
+</body>
+</html>

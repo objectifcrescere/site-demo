@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Prestations | Tarifs & Services</title>
+
+    <!-- Police Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="Assests/Img/logo.png" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="logo">Salon<span>.</span></div>
+
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="notresalon.html">Notre salon</a></li>
+            <li>
+              <a href="nosprestations.html" class="active">Prestations</a>
+            </li>
+            <li><a href="reservation.html" class="btn-nav">Réserver</a></li>
+          </ul>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">⋮</div>
+      </div>
+    </header>
+
+    <!-- HERO PAGE -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Nos prestations</h1>
+        <p>
+          Des services sur mesure, réalisés avec exigence et précision. Chaque
+          prestation inclut un diagnostic personnalisé.
+        </p>
+      </div>
+    </section>
+
+    <section class="prestations premium">
+      <div class="container">
+        <!-- FEMME -->
+        <div class="prestation-group">
+          <h2>Femme</h2>
+
+          <div class="prestation-table premium">
+            <div class="prestation-row">
+              <span class="label">Coupe & coiffage</span>
+              <span class="dots"></span>
+              <span class="price">65€</span>
+            </div>
+            <div class="prestation-row">
+              <span class="label">Brushing</span>
+              <span class="dots"></span>
+              <span class="price">45€</span>
+            </div>
+            <div class="prestation-row">
+              <span class="label">Coupe transformation</span>
+              <span class="dots"></span>
+              <span class="price">75€</span>
+            </div>
+            <div class="prestation-row">
+              <span class="label">Couleur racines</span>
+              <span class="dots"></span>
+              <span class="price">60€</span>
+            </div>
+            <div class="prestation-row featured">
+              <span class="label">Balayage / Ombré</span>
+              <span class="dots"></span>
+              <span class="price">À partir de 140€</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HOMME -->
+        <div class="prestation-group">
+          <h2>Homme</h2>
+
+          <div class="prestation-table premium">
+            <div class="prestation-row">
+              <span class="label">Coupe</span>
+              <span class="dots"></span>
+              <span class="price">40€</span>
+            </div>
+            <div class="prestation-row">
+              <span class="label">Coupe & barbe</span>
+              <span class="dots"></span>
+              <span class="price">55€</span>
+            </div>
+            <div class="prestation-row">
+              <span class="label">Taille de barbe</span>
+              <span class="dots"></span>
+              <span class="price">25€</span>
+            </div>
+            <div class="prestation-row">
+              <span class="label">Rasage traditionnel</span>
+              <span class="dots"></span>
+              <span class="price">35€</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SOINS -->
+        <div class="prestation-group">
+          <h2>Soins & techniques</h2>
+
+          <div class="prestation-table premium">
+            <div class="prestation-row">
+              <span class="label">Soin profond</span>
+              <span class="dots"></span>
+              <span class="price">30€</span>
+            </div>
+            <div class="prestation-row">
+              <span class="label">Soin kératine</span>
+              <span class="dots"></span>
+              <span class="price">Sur devis</span>
+            </div>
+            <div class="prestation-row">
+              <span class="label">Lissage brésilien</span>
+              <span class="dots"></span>
+              <span class="price">À partir de 180€</span>
+            </div>
+            <div class="prestation-row">
+              <span class="label">Coiffure événement</span>
+              <span class="dots"></span>
+              <span class="price">À partir de 80€</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <h2>Prêt(e) à réserver votre prestation ?</h2>
+        <a href="reservation.html" class="btn-primary">Prendre rendez-vous</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <h3>Salon.</h3>
+          <p>Coiffure haut de gamme & élégance intemporelle.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="legal.html">Mentions légales</a>
+          <a href="notresalon.html">Notre salon</a>
+          <a href="nosprestations.html">Prestations</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Salon – Tous droits réservés</p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("menuToggle");
+        const nav = document.getElementById("navLinks");
+
+        toggle.addEventListener("click", () => {
+          nav.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

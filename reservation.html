@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Réservation | Prendre rendez-vous</title>
+
+    <!-- Police Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+        <!-- Favicons -->
+    <link rel="icon" type="image/png" href="Assests/Img/logo.png">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">Salon<span>.</span></div>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="notresalon.html">Notre salon</a></li>
+                <li><a href="nosprestations.html">Prestations</a></li>
+                <li><a href="reservation.html" class="btn-nav" class="active">Réserver</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">⋮</div>
+    </div>
+</header>
+
+
+    <!-- HERO PAGE -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Réserver un rendez-vous</h1>
+            <p>
+                Choisissez la méthode qui vous convient le mieux pour prendre rendez-vous
+                avec notre équipe.
+            </p>
+        </div>
+    </section>
+
+    <!-- RESERVATION OPTIONS -->
+    <section class="reservation">
+        <div class="container">
+
+            <div class="reservation-grid">
+
+                <!-- PLANITY -->
+                <div class="reservation-card highlight">
+                    <h2>Réservation en ligne</h2>
+                    <p>
+                        Réservez votre créneau directement en ligne via notre plateforme
+                        partenaire.
+                    </p>
+                    <a href="https://www.planity.com" target="_blank" class="btn-primary">
+                        Réserver sur Planity
+                    </a>
+                </div>
+
+                <!-- TELEPHONE -->
+                <div class="reservation-card">
+                    <h2>Par téléphone</h2>
+                    <p>
+                        Notre équipe est disponible pour vous conseiller
+                        et fixer un rendez-vous.
+                    </p>
+                    <p class="contact-info">
+                        +33 1 23 45 67 89
+                    </p>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="reservation-card">
+                    <h2>Par email</h2>
+                    <p>
+                        Envoyez-nous votre demande, nous vous répondrons
+                        dans les plus brefs délais.
+                    </p>
+                    <p class="contact-info">
+                        contact@salon.fr
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Besoin d’un conseil avant de réserver ?</h2>
+        <p style="color: var(--gray); margin-bottom: 20px;">
+            N’hésitez pas à nous contacter, nous serons ravis de vous accompagner.
+        </p>
+        <p class="contact-info">
+            📞 +33 1 23 45 67 89<br>
+            ✉️ contact@salon.fr
+        </p>
+    </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Salon.</h3>
+                <p>Coiffure haut de gamme & élégance intemporelle.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="legal.html">Mentions légales</a>
+                <a href="notresalon.html">Notre salon</a>
+                <a href="nosprestations.html">Prestations</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Salon – Tous droits réservés</p>
+        </div>
+    </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("navLinks");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+});
+</script>
+
+</body>
+
+</html>
